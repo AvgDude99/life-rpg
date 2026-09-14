@@ -121,25 +121,29 @@ function openChest(l){
 }
 function showEventModal(type,data){
  const m=document.getElementById("modal"), c=document.getElementById("modalContent");
+ window.eventContinuation={levels:data.levels||[], defeated:data.defeatedObj||null};
  let html="";
  if(type==="complete"){
-   html=`<div class="modal-event"><div class="event-icon">⚔️</div><div class="event-title">Activity Complete!</div><div class="event-sub">${esc(data.name)}</div><div class="reward-grid"><div class="reward-box"><span class="muted small">XP</span><b class="xp">+${data.xp}</b></div><div class="reward-box"><span class="muted small">Gold</span><b class="gold">+${data.gold}</b></div><div class="reward-box"><span class="muted small">Damage</span><b>${data.damage}</b></div></div>${data.statsHtml?`<div class="loot">${data.statsHtml}</div>`:""}<button class="primary" onclick="continueAfterReward(${JSON.stringify(data.levels)},${JSON.stringify(data.defeatedObj||null)})">Continue</button></div>`;
+   html=`<div class="modal-event"><div class="event-icon">⚔️</div><div class="event-title">Activity Complete!</div><div class="event-sub">${esc(data.name)}</div><div class="reward-grid"><div class="reward-box"><span class="muted small">XP</span><b class="xp">+${data.xp}</b></div><div class="reward-box"><span class="muted small">Gold</span><b class="gold">+${data.gold}</b></div><div class="reward-box"><span class="muted small">Damage</span><b>${data.damage}</b></div></div>${data.statsHtml?`<div class="loot">${data.statsHtml}</div>`:""}<button class="primary" onclick="continueAfterReward()">Continue</button></div>`;
  }else if(type==="level"){
    html=`<div class="modal-event"><div class="event-icon">🎉</div><div class="event-title">LEVEL UP!</div><div class="event-sub">You reached Level ${data.level}</div><div class="loot">🔓 New content may now be available.</div><button class="primary" onclick="openChest(${data.level})">🎁 Open Level ${data.level} Chest</button></div>`;
  }else if(type==="chest"){
    html=`<div class="modal-event"><div class="event-icon">🎁</div><div class="event-title">Loot Acquired!</div><div class="event-sub">Level ${data.level} chest opened</div><div class="loot"><div style="font-size:22px;font-weight:800">${esc(data.item.name)}</div><span class="tag">${esc(data.item.rarity)}</span><p class="muted">${esc(data.item.desc)}</p></div><button class="primary" onclick="continueAfterChest()">Continue</button></div>`;
  }else if(type==="monster"){
-   html=`<div class="modal-event"><div class="event-icon">💥</div><div class="event-title">Enemy Defeated!</div><div class="event-sub">${esc(data.name)}</div><div class="loot complete-badge">Victory! +${data.gold} bonus gold</div><button class="primary" onclick="continueAfterMonster(${JSON.stringify(data.levels||[])})">Continue</button></div>`;
+   html=`<div class="modal-event"><div class="event-icon">💥</div><div class="event-title">Enemy Defeated!</div><div class="event-sub">${esc(data.name)}</div><div class="loot complete-badge">Victory! +${data.gold} bonus gold</div><button class="primary" onclick="continueAfterMonster()">Continue</button></div>`;
  }
  c.innerHTML=html; m.style.display="flex";
 }
-function continueAfterReward(levels,defeated){
- if(defeated){showEventModal("monster",{name:defeated.name,gold:defeated.gold,levels:levels||[]});return}
- if(levels&&levels.length){showEventModal("level",{level:levels[0],remaining:levels.slice(1)})}
+function continueAfterReward(){
+ const levels=window.eventContinuation?.levels||[];
+ const defeated=window.eventContinuation?.defeated||null;
+ if(defeated){showEventModal("monster",{name:defeated.name,gold:defeated.gold,levels:levels});return}
+ if(levels.length){showEventModal("level",{level:levels[0],remaining:levels.slice(1)});}
  else{closeModal();render()}
 }
-function continueAfterMonster(levels){
- if(levels&&levels.length)showEventModal("level",{level:levels[0],remaining:levels.slice(1)});
+function continueAfterMonster(){
+ const levels=window.eventContinuation?.levels||[];
+ if(levels.length)showEventModal("level",{level:levels[0],remaining:levels.slice(1)});
  else{closeModal();render()}
 }
 function continueAfterChest(){
