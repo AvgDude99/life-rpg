@@ -7,7 +7,7 @@
 <title>Life RPG</title>
 <style>
 :root{--bg:#111018;--panel:#1b1924;--panel2:#242130;--text:#f4f1fa;--muted:#aaa4b8;--accent:#b58cff;--good:#75d69c;--warn:#ffcb6b;--danger:#ff7185;--line:#363143}
-*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#111018,#171522 55%,#101016);color:var(--text);font:15px system-ui,-apple-system,Segoe UI,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer;color:var(--text);background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:9px 12px}button:hover{filter:brightness(1.12)}button.primary{background:#6746a8;border-color:#8b66ce}button.danger{background:#542432;border-color:#793444}.wrap{max-width:1050px;margin:auto;padding:16px}.top{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:14px}.brand{font-size:24px;font-weight:800}.sub{color:var(--muted);font-size:12px}.nav{display:flex;gap:7px;overflow:auto;padding-bottom:3px}.nav button.active{background:#6746a8;border-color:#8b66ce}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.panel{background:rgba(27,25,36,.94);border:1px solid var(--line);border-radius:14px;padding:15px}.wide{grid-column:1/-1}.hero{display:flex;justify-content:space-between;gap:15px;align-items:center}.level{font-size:31px;font-weight:800}.bar{height:9px;background:#0e0d13;border-radius:99px;overflow:hidden;border:1px solid #302c39}.fill{height:100%;background:linear-gradient(90deg,#7c59bf,#c29cff)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}.stat{background:#211e2b;border:1px solid #302c3b;border-radius:10px;padding:10px}.stat b{display:block;font-size:20px}.muted{color:var(--muted)}.task{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.task:last-child{border-bottom:0}.task-title{font-weight:700}.tag{display:inline-block;padding:3px 7px;border-radius:999px;background:#302b3b;color:#cfc7dc;font-size:11px;margin:2px 3px 2px 0}.xp{color:#d3adff;font-weight:800}.gold{color:#ffd56f}.cols{display:grid;grid-template-columns:1fr 1fr;gap:10px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.formgrid .full{grid-column:1/-1}label{display:block;color:var(--muted);font-size:12px;margin-bottom:5px}input,select,textarea{width:100%;background:#111018;color:var(--text);border:1px solid var(--line);border-radius:9px;padding:9px}textarea{min-height:70px}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.right{margin-left:auto}.small{font-size:12px}.empty{text-align:center;color:var(--muted);padding:20px}.loot{padding:11px;border:1px solid #493d5e;background:#241f30;border-radius:10px;margin:8px 0}.locked{opacity:.5}.enemy{font-size:18px;font-weight:800}.boss{border-color:#734252;background:#241a21}.item{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px;border-bottom:1px solid var(--line)}.item:last-child{border-bottom:0}.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#272330;border:1px solid #5a4b6e;border-radius:10px;padding:10px 14px;display:none;z-index:5;box-shadow:0 10px 30px #0008}.modal{position:fixed;inset:0;background:#0009;display:none;align-items:center;justify-content:center;padding:15px;z-index:4}.modal .panel{max-width:600px;width:100%;max-height:90vh;overflow:auto}.checkboxes{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.check{background:#111018;border:1px solid var(--line);padding:8px;border-radius:8px}.check input{width:auto}.footer{color:#777184;text-align:center;font-size:11px;padding:20px 0}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#111018,#171522 55%,#101016);color:var(--text);font:15px system-ui,-apple-system,Segoe UI,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer;color:var(--text);background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:9px 12px}button:hover{filter:brightness(1.12)}button.primary{background:#6746a8;border-color:#8b66ce}button.danger{background:#542432;border-color:#793444}.wrap{max-width:1050px;margin:auto;padding:16px}.top{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:14px}.brand{font-size:24px;font-weight:800}.sub{color:var(--muted);font-size:12px}.nav{display:flex;gap:7px;overflow:auto;padding-bottom:3px}.nav button.active{background:#6746a8;border-color:#8b66ce}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.panel{background:rgba(27,25,36,.94);border:1px solid var(--line);border-radius:14px;padding:15px}.wide{grid-column:1/-1}.hero{display:flex;justify-content:space-between;gap:15px;align-items:center}.level{font-size:31px;font-weight:800}.bar{height:9px;background:#0e0d13;border-radius:99px;overflow:hidden;border:1px solid #302c39}.fill{height:100%;background:linear-gradient(90deg,#7c59bf,#c29cff)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}.stat{background:#211e2b;border:1px solid #302c3b;border-radius:10px;padding:10px}.stat b{display:block;font-size:20px}.muted{color:var(--muted)}.task{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.task:last-child{border-bottom:0}.task-title{font-weight:700}.tag{display:inline-block;padding:3px 7px;border-radius:999px;background:#302b3b;color:#cfc7dc;font-size:11px;margin:2px 3px 2px 0}.xp{color:#d3adff;font-weight:800}.gold{color:#ffd56f}.cols{display:grid;grid-template-columns:1fr 1fr;gap:10px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.formgrid .full{grid-column:1/-1}label{display:block;color:var(--muted);font-size:12px;margin-bottom:5px}input,select,textarea{width:100%;background:#111018;color:var(--text);border:1px solid var(--line);border-radius:9px;padding:9px}textarea{min-height:70px}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.right{margin-left:auto}.small{font-size:12px}.empty{text-align:center;color:var(--muted);padding:20px}.loot{padding:11px;border:1px solid #493d5e;background:#241f30;border-radius:10px;margin:8px 0}.locked{opacity:.5}.enemy{font-size:18px;font-weight:800}.boss{border-color:#734252;background:#241a21}.item{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px;border-bottom:1px solid var(--line)}.item:last-child{border-bottom:0}.task.done{opacity:.48;background:#17151f}.task.done button{cursor:default}.complete-badge{color:var(--good);font-weight:800}.modal-event{text-align:center;padding:8px}.event-icon{font-size:52px;line-height:1.1;margin-bottom:8px}.event-title{font-size:28px;font-weight:900;margin:4px 0 8px}.event-sub{color:var(--muted);margin-bottom:16px}.reward-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0}.reward-box{background:#211e2b;border:1px solid var(--line);border-radius:10px;padding:10px}.reward-box b{display:block;font-size:20px}.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#272330;border:1px solid #5a4b6e;border-radius:10px;padding:10px 14px;display:none;z-index:5;box-shadow:0 10px 30px #0008}.modal{position:fixed;inset:0;background:#0009;display:none;align-items:center;justify-content:center;padding:15px;z-index:4}.modal .panel{max-width:600px;width:100%;max-height:90vh;overflow:auto}.checkboxes{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.check{background:#111018;border:1px solid var(--line);padding:8px;border-radius:8px}.check input{width:auto}.footer{color:#777184;text-align:center;font-size:11px;padding:20px 0}
 @media(max-width:700px){.grid,.cols,.formgrid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.hero{align-items:flex-start;flex-direction:column}.nav button{white-space:nowrap}}
 </style>
 </head>
@@ -57,9 +57,15 @@ let state=JSON.parse(localStorage.getItem("lifeRPG_v1")||"null")||{
  name:"Adventurer",level:1,xp:0,gold:0,stats:Object.fromEntries(STATS.map(s=>[s,0])),
  class:null,tasks:structuredClone(starterTasks),completed:{},inventory:[],equipped:{},achievements:[],
  dungeon:{floor:1,enemyIndex:0,enemyHp:100,run:"Whispering Forest"},
- unlockedBosses:[],chestLevels:[],log:[]
+ unlockedBosses:[],chestLevels:[],pendingChests:[],log:[]
 };
 let page="home";
+if(!state.pendingChests)state.pendingChests=[];
+if(!state.chestLevels)state.chestLevels=[];
+if(!state.completed)state.completed={};
+if(!state.log)state.log=[];
+state.tasks.forEach(taskId);
+save();
 
 function save(){localStorage.setItem("lifeRPG_v1",JSON.stringify(state))}
 function toast(t){const e=document.getElementById("toast");e.textContent=t;e.style.display="block";clearTimeout(window._toast);window._toast=setTimeout(()=>e.style.display="none",2300)}
@@ -67,51 +73,108 @@ function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",
 function levelNeed(l){return Math.round(75*Math.pow(1.16,l-1))}
 function totalOutputBonus(){return Object.values(state.equipped).reduce((a,id)=>a+(state.inventory.find(x=>x.id===id)?.value||0),0)}
 function statOutput(stat){let b=1+(state.stats[stat]||0)/200; if(state.class)b*=1+(classes[state.class].bonuses[stat]||0); return b}
+function localDateKey(d=new Date()){
+ const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,"0"),day=String(d.getDate()).padStart(2,"0");
+ return `${y}-${m}-${day}`;
+}
+function todayKey(){return localDateKey()}
+function weekKey(){
+ const d=new Date(); const day=d.getDay()||7; const monday=new Date(d); monday.setHours(0,0,0,0); monday.setDate(d.getDate()-day+1);
+ return localDateKey(monday);
+}
+function taskId(t){if(!t.id)t.id="task-"+Math.random().toString(36).slice(2,10);return t.id}
+function completionKey(t){
+ taskId(t);
+ if(t.type==="Daily")return t.id+"|day|"+todayKey();
+ if(t.type==="Weekly")return t.id+"|week|"+weekKey();
+ return t.id+"|once";
+}
+function isTaskDone(t){
+ const key=completionKey(t);
+ return !!state.completed[key];
+}
+function canCompleteTask(t){
+ if(t.type==="One-Time"||t.type==="Quest"||t.type==="Epic Quest")return !isTaskDone(t);
+ return !isTaskDone(t);
+}
 function levelCheck(){
  let gained=[];
- while(state.xp>=levelNeed(state.level)){state.xp-=levelNeed(state.level);state.level++;gained.push(state.level)}
+ while(state.xp>=levelNeed(state.level)){
+   state.xp-=levelNeed(state.level); state.level++; gained.push(state.level);
+ }
  for(const l of gained){
-   if(!state.chestLevels.includes(l)){state.chestLevels.push(l);openLevelChest(l)}
-   if([3,5,8,10,15,20,25].includes(l)) toast("🔓 New content unlocked at level "+l+"!");
+   if(!state.pendingChests.includes(l) && !state.chestLevels.includes(l))state.pendingChests.push(l);
  }
  return gained;
 }
-function openLevelChest(l){
+function openChest(l){
+ if(state.chestLevels.includes(l)){return toast("This chest has already been opened.")}
  const pool=starterItems;
  const item=pool[Math.floor(Math.random()*pool.length)];
  const copy={...item,id:item.id+"-"+Date.now()+"-"+Math.random().toString(16).slice(2)};
  state.inventory.push(copy);
- state.log.unshift(`Level ${l} chest: ${item.name}`);
+ state.chestLevels.push(l);
+ state.pendingChests=state.pendingChests.filter(x=>x!==l);
+ state.log.unshift(`Level ${l} chest opened: ${item.name}`);
+ save(); render();
+ showEventModal("chest", {level:l,item:copy});
+}
+function showEventModal(type,data){
+ const m=document.getElementById("modal"), c=document.getElementById("modalContent");
+ let html="";
+ if(type==="complete"){
+   html=`<div class="modal-event"><div class="event-icon">⚔️</div><div class="event-title">Activity Complete!</div><div class="event-sub">${esc(data.name)}</div><div class="reward-grid"><div class="reward-box"><span class="muted small">XP</span><b class="xp">+${data.xp}</b></div><div class="reward-box"><span class="muted small">Gold</span><b class="gold">+${data.gold}</b></div><div class="reward-box"><span class="muted small">Damage</span><b>${data.damage}</b></div></div>${data.statsHtml?`<div class="loot">${data.statsHtml}</div>`:""}<button class="primary" onclick="continueAfterReward(${JSON.stringify(data.levels)},${JSON.stringify(data.defeatedObj||null)})">Continue</button></div>`;
+ }else if(type==="level"){
+   html=`<div class="modal-event"><div class="event-icon">🎉</div><div class="event-title">LEVEL UP!</div><div class="event-sub">You reached Level ${data.level}</div><div class="loot">🔓 New content may now be available.</div><button class="primary" onclick="openChest(${data.level})">🎁 Open Level ${data.level} Chest</button></div>`;
+ }else if(type==="chest"){
+   html=`<div class="modal-event"><div class="event-icon">🎁</div><div class="event-title">Loot Acquired!</div><div class="event-sub">Level ${data.level} chest opened</div><div class="loot"><div style="font-size:22px;font-weight:800">${esc(data.item.name)}</div><span class="tag">${esc(data.item.rarity)}</span><p class="muted">${esc(data.item.desc)}</p></div><button class="primary" onclick="continueAfterChest()">Continue</button></div>`;
+ }else if(type==="monster"){
+   html=`<div class="modal-event"><div class="event-icon">💥</div><div class="event-title">Enemy Defeated!</div><div class="event-sub">${esc(data.name)}</div><div class="loot complete-badge">Victory! +${data.gold} bonus gold</div><button class="primary" onclick="continueAfterMonster(${JSON.stringify(data.levels||[])})">Continue</button></div>`;
+ }
+ c.innerHTML=html; m.style.display="flex";
+}
+function continueAfterReward(levels,defeated){
+ if(defeated){showEventModal("monster",{name:defeated.name,gold:defeated.gold,levels:levels||[]});return}
+ if(levels&&levels.length){showEventModal("level",{level:levels[0],remaining:levels.slice(1)})}
+ else{closeModal();render()}
+}
+function continueAfterMonster(levels){
+ if(levels&&levels.length)showEventModal("level",{level:levels[0],remaining:levels.slice(1)});
+ else{closeModal();render()}
+}
+function continueAfterChest(){
+ const next=state.pendingChests.slice().sort((a,b)=>a-b)[0];
+ if(next!==undefined)showEventModal("level",{level:next});
+ else{closeModal();render()}
 }
 function completeTask(i){
- const t=state.tasks[i]; if(!t)return;
- const key=t.name+"|"+new Date().toISOString().slice(0,10);
- if(t.type==="Daily" && state.completed[key])return toast("Already completed today.");
+ const t=state.tasks[i]; if(!t)return; taskId(t);
+ if(isTaskDone(t))return toast(t.type==="Daily"?"Already completed today.":t.type==="Weekly"?"Already completed this week.":"Already completed.");
  const xp=t.xp;
  state.xp+=xp;
  for(const [s,v] of Object.entries(t.stats||{}))state.stats[s]=(state.stats[s]||0)+v;
- state.gold+=Math.max(1,Math.round(xp/2));
- state.completed[key]=true;
- const stat=Object.keys(t.stats||{})[0]||"Discipline";
+ const gold=Math.max(1,Math.round(xp/2)); state.gold+=gold;
+ state.completed[completionKey(t)]=true;
+ const stat=t.primary||Object.keys(t.stats||{})[0]||"Discipline";
  const damage=Math.round(xp*statOutput(stat)*(1+totalOutputBonus()));
- damageDungeon(damage);
- const lv=levelCheck();
+ const defeated=damageDungeon(damage);
+ const levels=levelCheck();
+ const statsHtml=Object.entries(t.stats||{}).map(([s,v])=>`${ICONS[s]} +${v} ${s}`).join(" &nbsp; ");
  state.log.unshift(`${t.name}: +${xp} XP, +${damage} damage`);
  save();render();
- toast(`✓ ${t.name}  +${xp} XP  •  ${damage} damage`);
+ showEventModal("complete",{name:t.name,xp,gold,damage,levels,statsHtml,defeatedObj:defeated});
 }
 function damageDungeon(dmg){
- let d=state.dungeon;
- d.enemyHp-=dmg;
+ let d=state.dungeon; d.enemyHp-=dmg;
  if(d.enemyHp<=0){
    const name=d.enemyIndex%4===3?"Elite Warden":["Slime","Goblin","Wraith"][d.enemyIndex%3];
-   state.gold+=10+d.floor*2;
-   d.enemyIndex++;
-   if(d.enemyIndex>=4){d.enemyIndex=0;d.floor++; if(d.floor%5===0){d.run="Ruins of Apathy";}}
-   d.enemyHp=enemyMax(d);
-   state.log.unshift(`Defeated ${name}!`);
-   if(d.floor>=5 && !state.unlockedBosses.includes("Warden")){state.unlockedBosses.push("Warden");}
+   const bonus=10+d.floor*2; state.gold+=bonus; d.enemyIndex++;
+   if(d.enemyIndex>=4){d.enemyIndex=0;d.floor++;if(d.floor%5===0)d.run="Ruins of Apathy";}
+   d.enemyHp=enemyMax(d); state.log.unshift(`Defeated ${name}!`);
+   if(d.floor>=5&&!state.unlockedBosses.includes("Warden"))state.unlockedBosses.push("Warden");
+   return {name,gold:bonus};
  }
+ return null;
 }
 function enemyMax(d){return 70+d.floor*35+(d.enemyIndex===3?70:0)}
 function bossData(){
@@ -146,7 +209,7 @@ function equip(id){
  save();render();
 }
 function addTask(t){
- state.tasks.push(t);save();render();closeModal();toast("Task created.");
+ taskId(t); state.tasks.push(t);save();render();closeModal();toast("Task created.");
 }
 function taskModal(){
  document.getElementById("modalContent").innerHTML=`<h2>Create activity / task</h2>
@@ -202,7 +265,9 @@ function home(){
  </div>`;
 }
 function tasks(){
- document.getElementById("app").innerHTML=`<div class="grid"><section class="panel wide"><div class="row"><div><h2 style="margin:0">📜 Activities & Quests</h2><div class="muted small">XP is your chosen reward. Difficulty only suggests a starting value.</div></div><button class="primary right" onclick="taskModal()">+ Create</button></div>${state.tasks.map((t,i)=>`<div class="task"><div><div class="task-title">${esc(t.name)}</div><span class="tag">${t.type}</span><span class="tag">${t.difficulty}</span><span class="xp">+${t.xp} XP</span><div class="muted small">${esc(t.desc||"")} ${Object.entries(t.stats||{}).map(([s,v])=>`• ${ICONS[s]} +${v} ${s}`).join(" ")}</div></div><div class="row"><button onclick="completeTask(${i})">✓ Complete</button><button onclick="editTask(${i})">Edit</button></div></div>`).join("")}</section></div>`;
+ const active=state.tasks.filter(t=>!isTaskDone(t)); const done=state.tasks.filter(t=>isTaskDone(t));
+ const taskHtml=(t,i,completed)=>`<div class="task ${completed?"done":""}"><div><div class="task-title">${esc(t.name)} ${completed?'<span class="complete-badge">✓ Done</span>':''}</div><span class="tag">${t.type}</span><span class="tag">${t.difficulty}</span><span class="xp">+${t.xp} XP</span><div class="muted small">${esc(t.desc||"")} ${Object.entries(t.stats||{}).map(([s,v])=>`• ${ICONS[s]} +${v} ${s}`).join(" ")}</div></div><div class="row">${completed?'<button disabled>✓ Completed</button>':`<button class="primary" onclick="completeTask(${i})">✓ Complete</button>`}<button onclick="editTask(${i})">Edit</button></div></div>`;
+ document.getElementById("app").innerHTML=`<div class="grid"><section class="panel wide"><div class="row"><div><h2 style="margin:0">📜 Activities & Quests</h2><div class="muted small">Today: ${new Date().toLocaleDateString()} • Daily tasks reset tomorrow; weekly tasks reset Monday.</div></div><button class="primary right" onclick="taskModal()">+ Create</button></div>${active.map(t=>taskHtml(t,state.tasks.indexOf(t),false)).join("")||'<div class="empty">🎉 Nothing left to complete for this period!</div>'}${done.length?`<h3 style="margin-top:20px">Completed for this period</h3>${done.map(t=>taskHtml(t,state.tasks.indexOf(t),true)).join("")}`:""}</section></div>`;
 }
 function dungeon(){
  const d=state.dungeon, hp=enemyMax(d);
