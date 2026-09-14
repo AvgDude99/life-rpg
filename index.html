@@ -7,7 +7,7 @@
 <title>Life RPG</title>
 <style>
 :root{--bg:#111018;--panel:#1b1924;--panel2:#242130;--text:#f4f1fa;--muted:#aaa4b8;--accent:#b58cff;--good:#75d69c;--warn:#ffcb6b;--danger:#ff7185;--line:#363143}
-*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#111018,#171522 55%,#101016);color:var(--text);font:15px system-ui,-apple-system,Segoe UI,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer;color:var(--text);background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:9px 12px}button:hover{filter:brightness(1.12)}button.primary{background:#6746a8;border-color:#8b66ce}button.danger{background:#542432;border-color:#793444}.wrap{max-width:1050px;margin:auto;padding:16px}.top{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:14px}.brand{font-size:24px;font-weight:800}.sub{color:var(--muted);font-size:12px}.nav{display:flex;gap:7px;overflow:auto;padding-bottom:3px}.nav button.active{background:#6746a8;border-color:#8b66ce}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.panel{background:rgba(27,25,36,.94);border:1px solid var(--line);border-radius:14px;padding:15px}.wide{grid-column:1/-1}.hero{display:flex;justify-content:space-between;gap:15px;align-items:center}.level{font-size:31px;font-weight:800}.bar{height:9px;background:#0e0d13;border-radius:99px;overflow:hidden;border:1px solid #302c39}.fill{height:100%;background:linear-gradient(90deg,#7c59bf,#c29cff)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}.stat{background:#211e2b;border:1px solid #302c3b;border-radius:10px;padding:10px}.stat b{display:block;font-size:20px}.muted{color:var(--muted)}.task{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.task:last-child{border-bottom:0}.task-title{font-weight:700}.tag{display:inline-block;padding:3px 7px;border-radius:999px;background:#302b3b;color:#cfc7dc;font-size:11px;margin:2px 3px 2px 0}.xp{color:#d3adff;font-weight:800}.gold{color:#ffd56f}.cols{display:grid;grid-template-columns:1fr 1fr;gap:10px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.formgrid .full{grid-column:1/-1}label{display:block;color:var(--muted);font-size:12px;margin-bottom:5px}input,select,textarea{width:100%;background:#111018;color:var(--text);border:1px solid var(--line);border-radius:9px;padding:9px}textarea{min-height:70px}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.right{margin-left:auto}.small{font-size:12px}.empty{text-align:center;color:var(--muted);padding:20px}.loot{padding:11px;border:1px solid #493d5e;background:#241f30;border-radius:10px;margin:8px 0}.locked{opacity:.5}.enemy{font-size:18px;font-weight:800}.boss{border-color:#734252;background:#241a21}.item{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px;border-bottom:1px solid var(--line)}.item:last-child{border-bottom:0}.task.done{opacity:.48;background:#17151f}.task.done button{cursor:default}.complete-badge{color:var(--good);font-weight:800}.modal-event{text-align:center;padding:8px}.event-icon{font-size:52px;line-height:1.1;margin-bottom:8px}.event-title{font-size:28px;font-weight:900;margin:4px 0 8px}.event-sub{color:var(--muted);margin-bottom:16px}.reward-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0}.reward-box{background:#211e2b;border:1px solid var(--line);border-radius:10px;padding:10px}.reward-box b{display:block;font-size:20px}.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#272330;border:1px solid #5a4b6e;border-radius:10px;padding:10px 14px;display:none;z-index:5;box-shadow:0 10px 30px #0008}.modal{position:fixed;inset:0;background:#0009;display:none;align-items:center;justify-content:center;padding:15px;z-index:4}.modal .panel{max-width:600px;width:100%;max-height:90vh;overflow:auto}.checkboxes{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.check{background:#111018;border:1px solid var(--line);padding:8px;border-radius:8px}.check input{width:auto}.footer{color:#777184;text-align:center;font-size:11px;padding:20px 0}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#111018,#171522 55%,#101016);color:var(--text);font:15px system-ui,-apple-system,Segoe UI,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer;color:var(--text);background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:9px 12px}button:hover{filter:brightness(1.12)}button.primary{background:#6746a8;border-color:#8b66ce}button.danger{background:#542432;border-color:#793444}.wrap{max-width:1050px;margin:auto;padding:16px}.top{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:14px}.brand{font-size:24px;font-weight:800}.sub{color:var(--muted);font-size:12px}.nav{display:flex;gap:7px;overflow:auto;padding-bottom:3px}.nav button.active{background:#6746a8;border-color:#8b66ce}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.panel{background:rgba(27,25,36,.94);border:1px solid var(--line);border-radius:14px;padding:15px}.wide{grid-column:1/-1}.hero{display:flex;justify-content:space-between;gap:15px;align-items:center}.level{font-size:31px;font-weight:800}.bar{height:9px;background:#0e0d13;border-radius:99px;overflow:hidden;border:1px solid #302c39}.fill{height:100%;background:linear-gradient(90deg,#7c59bf,#c29cff)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}.stat{background:#211e2b;border:1px solid #302c3b;border-radius:10px;padding:10px}.stat b{display:block;font-size:20px}.muted{color:var(--muted)}.task{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.task:last-child{border-bottom:0}.task-title{font-weight:700}.tag{display:inline-block;padding:3px 7px;border-radius:999px;background:#302b3b;color:#cfc7dc;font-size:11px;margin:2px 3px 2px 0}.xp{color:#d3adff;font-weight:800}.gold{color:#ffd56f}.cols{display:grid;grid-template-columns:1fr 1fr;gap:10px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.formgrid .full{grid-column:1/-1}label{display:block;color:var(--muted);font-size:12px;margin-bottom:5px}input,select,textarea{width:100%;background:#111018;color:var(--text);border:1px solid var(--line);border-radius:9px;padding:9px}textarea{min-height:70px}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.right{margin-left:auto}.small{font-size:12px}.empty{text-align:center;color:var(--muted);padding:20px}.loot{padding:11px;border:1px solid #493d5e;background:#241f30;border-radius:10px;margin:8px 0}.locked{opacity:.5}.enemy{font-size:18px;font-weight:800}.boss{border-color:#734252;background:#241a21}.item{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px;border-bottom:1px solid var(--line)}.item:last-child{border-bottom:0}.task.done{opacity:.48;background:#17151f}.task.done button{cursor:default}.complete-badge{color:var(--good);font-weight:800}.modal-event{text-align:center;padding:8px}.event-icon{font-size:52px;line-height:1.1;margin-bottom:8px}.event-title{font-size:28px;font-weight:900;margin:4px 0 8px}.event-sub{color:var(--muted);margin-bottom:16px}.reward-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0}.reward-box{background:#211e2b;border:1px solid var(--line);border-radius:10px;padding:10px}.reward-box b{display:block;font-size:20px}.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#272330;border:1px solid #5a4b6e;border-radius:10px;padding:10px 14px;display:none;z-index:5;box-shadow:0 10px 30px #0008}.modal{position:fixed;inset:0;background:#0009;display:none;align-items:center;justify-content:center;padding:15px;z-index:4}.modal .panel{max-width:600px;width:100%;max-height:90vh;overflow:auto}.checkboxes{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.check{background:#111018;border:1px solid var(--line);padding:8px;border-radius:8px}.check input{width:auto}.footer{color:#777184;text-align:center;font-size:11px;padding:20px 0}.shop-price{font-weight:800}.check input{width:auto}
 @media(max-width:700px){.grid,.cols,.formgrid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.hero{align-items:flex-start;flex-direction:column}.nav button{white-space:nowrap}}
 </style>
 </head>
@@ -19,7 +19,7 @@
   </div>
   <div class="nav" id="nav"></div>
   <main id="app"></main>
-  <div class="footer">Local save only • No account • No server • v0.1 prototype</div>
+  <div class="footer">Local save only • No account • No server • v0.3 expansion</div>
 </div>
 <div class="toast" id="toast"></div>
 <div class="modal" id="modal"><div class="panel" id="modalContent"></div></div>
@@ -28,15 +28,10 @@ const STATS=["Strength","Endurance","Mind","Discipline","Vitality","Social"];
 const ICONS={Strength:"💪",Endurance:"🏃",Mind:"🧠",Discipline:"🎯",Vitality:"❤️",Social:"🤝"};
 const TYPES=["Daily","Weekly","One-Time","Quest","Epic Quest"];
 const DIFFS=["Easy","Medium","Hard","Epic"];
+const DAYS=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 const diffBase={Easy:5,Medium:10,Hard:20,Epic:40};
-const typeMult={Daily:1,Weekly:2,"One-Time":1.5,Quest:3,"Epic Quest":6};
 const classes={
- Warrior:{bonuses:{Strength:.10,Endurance:.05},desc:"+10% Strength output, +5% Endurance output"},
- Ranger:{bonuses:{Endurance:.10,Vitality:.05},desc:"+10% Endurance output, +5% Vitality output"},
- Mage:{bonuses:{Mind:.10,Discipline:.05},desc:"+10% Mind output, +5% Discipline output"},
- Rogue:{bonuses:{Discipline:.10,Social:.05},desc:"+10% Discipline output, +5% Social output"},
- Paladin:{bonuses:{Vitality:.10,Strength:.05},desc:"+10% Vitality output, +5% Strength output"},
- Bard:{bonuses:{Social:.10,Mind:.05},desc:"+10% Social output, +5% Mind output"}
+ Warrior:{bonuses:{Strength:.10,Endurance:.05},desc:"+10% Strength output, +5% Endurance output"},Ranger:{bonuses:{Endurance:.10,Vitality:.05},desc:"+10% Endurance output, +5% Vitality output"},Mage:{bonuses:{Mind:.10,Discipline:.05},desc:"+10% Mind output, +5% Discipline output"},Rogue:{bonuses:{Discipline:.10,Social:.05},desc:"+10% Discipline output, +5% Social output"},Paladin:{bonuses:{Vitality:.10,Strength:.05},desc:"+10% Vitality output, +5% Strength output"},Bard:{bonuses:{Social:.10,Mind:.05},desc:"+10% Social output, +5% Mind output"}
 };
 const starterTasks=[
  {name:"Brush teeth",type:"Daily",difficulty:"Easy",xp:5,stats:{Vitality:2},desc:"Basic self-care."},
@@ -46,265 +41,126 @@ const starterTasks=[
  {name:"Tidy room",type:"Weekly",difficulty:"Medium",xp:10,stats:{Discipline:5,Vitality:2},desc:"A meaningful cleaning session."},
  {name:"Meet / call a friend",type:"Weekly",difficulty:"Medium",xp:10,stats:{Social:7},desc:"Meaningful social contact."}
 ];
-const starterItems=[
- {id:"iron-sword",name:"Iron Sword",rarity:"Common",slot:"Weapon",effect:"damage",value:.10,desc:"+10% damage"},
- {id:"leather-gloves",name:"Leather Gloves",rarity:"Common",slot:"Weapon",effect:"damage",value:.05,desc:"+5% damage"},
- {id:"focus-charm",name:"Focus Charm",rarity:"Uncommon",slot:"Trinket",effect:"damage",value:.08,desc:"+8% damage"},
- {id:"battle-ring",name:"Battle Ring",rarity:"Rare",slot:"Trinket",effect:"damage",value:.15,desc:"+15% damage"},
- {id:"dragon-edge",name:"Dragon's Edge",rarity:"Epic",slot:"Weapon",effect:"damage",value:.25,desc:"+25% damage"}
+const items=[
+ {id:"iron-sword",name:"Iron Sword",rarity:"Common",slot:"Weapon",effect:"damage",value:.10,price:60,desc:"+10% damage"},
+ {id:"leather-gloves",name:"Leather Gloves",rarity:"Common",slot:"Weapon",effect:"damage",value:.05,price:45,desc:"+5% damage"},
+ {id:"hunter-bow",name:"Hunter's Bow",rarity:"Uncommon",slot:"Weapon",effect:"damage",value:.12,price:110,desc:"+12% damage"},
+ {id:"steel-axe",name:"Steel Axe",rarity:"Rare",slot:"Weapon",effect:"damage",value:.20,price:220,desc:"+20% damage"},
+ {id:"focus-charm",name:"Focus Charm",rarity:"Uncommon",slot:"Trinket",effect:"damage",value:.08,price:100,desc:"+8% damage"},
+ {id:"battle-ring",name:"Battle Ring",rarity:"Rare",slot:"Trinket",effect:"damage",value:.15,price:180,desc:"+15% damage"},
+ {id:"moon-amulet",name:"Moon Amulet",rarity:"Epic",slot:"Trinket",effect:"damage",value:.25,price:350,desc:"+25% damage"},
+ {id:"dragon-edge",name:"Dragon's Edge",rarity:"Legendary",slot:"Weapon",effect:"damage",value:.35,price:600,desc:"+35% damage"}
 ];
-let state=JSON.parse(localStorage.getItem("lifeRPG_v1")||"null")||{
- name:"Adventurer",level:1,xp:0,gold:0,stats:Object.fromEntries(STATS.map(s=>[s,0])),
- class:null,tasks:structuredClone(starterTasks),completed:{},inventory:[],equipped:{},achievements:[],
- dungeon:{floor:1,enemyIndex:0,enemyHp:100,run:"Whispering Forest"},
- unlockedBosses:[],chestLevels:[],pendingChests:[],log:[]
-};
+const cosmetics=[
+ {id:"title-novice",name:"Title: Novice Hero",type:"Title",price:80,desc:"A humble beginning."},
+ {id:"title-grinder",name:"Title: The Grinder",type:"Title",price:200,desc:"For people who never stop."},
+ {id:"aura-spark",name:"Spark Aura",type:"Aura",price:250,desc:"A little visual flair."},
+ {id:"avatar-crown",name:"Golden Crown",type:"Avatar",price:400,desc:"Purely cosmetic."},
+ {id:"title-slayer",name:"Title: Monster Slayer",type:"Title",price:500,desc:"Proof of repeated victories."}
+];
+const dungeons=[
+ {id:"forest",name:"Whispering Forest",need:1,theme:"🌲",floors:5,desc:"A haunted woodland where procrastination takes root."},
+ {id:"ruins",name:"Ruins of Apathy",need:3,theme:"🏛️",floors:5,desc:"Ancient halls guarded by creatures of indifference."},
+ {id:"archives",name:"Sunken Archives",need:7,theme:"📚",floors:6,desc:"Lost knowledge lies beneath the water."},
+ {id:"castle",name:"Crimson Castle",need:12,theme:"🏰",floors:6,desc:"A fortress of bad habits and broken routines."},
+ {id:"rift",name:"Abyssal Rift",need:18,theme:"🌀",floors:7,desc:"The deeper you go, the harder reality fights back."},
+ {id:"dream",name:"Dreaming City",need:25,theme:"🌙",floors:8,desc:"A surreal endgame dungeon of distraction."}
+];
+const bossList=[
+ {id:"Warden",name:"The Warden of Apathy",need:5,hp:1200,weak:"Discipline",loot:"battle-ring",desc:"Punishes inconsistency."},
+ {id:"Glutton",name:"The Glutton",need:10,hp:2200,weak:"Vitality",loot:"focus-charm",desc:"Feeds on unhealthy choices."},
+ {id:"Mirror",name:"The Mirror of Doubt",need:15,hp:3000,weak:"Mind",loot:"moon-amulet",desc:"Reflects your excuses back at you."},
+ {id:"Procrastinator",name:"The Grand Procrastinator",need:20,hp:4000,weak:"Endurance",loot:"steel-axe",desc:"Always promises to start tomorrow."},
+ {id:"Dragon",name:"The Procrastination Dragon",need:25,hp:6000,weak:"Discipline",loot:"dragon-edge",desc:"The ultimate guardian of wasted time."}
+];
+const achievementDefs=[
+ {id:"first-step",name:"First Step",desc:"Complete your first activity.",check:()=>state.totalCompletions>=1,reward:25},
+ {id:"ten",name:"Getting Serious",desc:"Complete 10 activities.",check:()=>state.totalCompletions>=10,reward:50},
+ {id:"hundred",name:"Habit Hero",desc:"Complete 100 activities.",check:()=>state.totalCompletions>=100,reward:200},
+ {id:"level5",name:"Rising Hero",desc:"Reach level 5.",check:()=>state.level>=5,reward:50},
+ {id:"level10",name:"Seasoned Adventurer",desc:"Reach level 10.",check:()=>state.level>=10,reward:100},
+ {id:"level20",name:"Veteran",desc:"Reach level 20.",check:()=>state.level>=20,reward:250},
+ {id:"stat50",name:"Specialist",desc:"Raise any stat to 50.",check:()=>STATS.some(s=>state.stats[s]>=50),reward:75},
+ {id:"allstats20",name:"Well Rounded",desc:"Raise every stat to 20.",check:()=>STATS.every(s=>state.stats[s]>=20),reward:150},
+ {id:"dungeon",name:"Dungeon Crawler",desc:"Defeat 20 dungeon enemies.",check:()=>state.totalKills>=20,reward:100},
+ {id:"boss1",name:"Boss Hunter",desc:"Defeat your first boss.",check:()=>state.bossKills>=1,reward:150},
+ {id:"boss3",name:"Boss Slayer",desc:"Defeat 3 bosses.",check:()=>state.bossKills>=3,reward:300},
+ {id:"rich",name:"Treasure Hunter",desc:"Hold 1,000 gold.",check:()=>state.gold>=1000,reward:150},
+ {id:"collector",name:"Collector",desc:"Own 5 pieces of equipment.",check:()=>state.inventory.length>=5,reward:100}
+];
+function defaultState(){return {name:"Adventurer",level:1,xp:0,gold:0,stats:Object.fromEntries(STATS.map(s=>[s,0])),class:null,tasks:structuredClone(starterTasks),completed:{},inventory:[],equipped:{},achievements:[],cosmetics:[],activeCosmetic:null,totalCompletions:0,totalKills:0,bossKills:0,chestLevels:[],pendingChests:[],log:[],dungeon:{id:"forest",floor:1,enemyIndex:0,enemyHp:105}}}
+let state=JSON.parse(localStorage.getItem("lifeRPG_v1")||"null")||defaultState();
 let page="home";
-if(!state.pendingChests)state.pendingChests=[];
-if(!state.chestLevels)state.chestLevels=[];
-if(!state.completed)state.completed={};
-if(!state.log)state.log=[];
-state.tasks.forEach(taskId);
-save();
-
+state.pendingChests??=[];state.chestLevels??=[];state.completed??={};state.log??=[];state.totalCompletions??=0;state.totalKills??=0;state.bossKills??=0;state.cosmetics??=[];state.activeCosmetic??=null;state.dungeon??={id:"forest",floor:1,enemyIndex:0,enemyHp:105};
+state.tasks.forEach(taskId);save();
 function save(){localStorage.setItem("lifeRPG_v1",JSON.stringify(state))}
 function toast(t){const e=document.getElementById("toast");e.textContent=t;e.style.display="block";clearTimeout(window._toast);window._toast=setTimeout(()=>e.style.display="none",2300)}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]))}
 function levelNeed(l){return Math.round(75*Math.pow(1.16,l-1))}
 function totalOutputBonus(){return Object.values(state.equipped).reduce((a,id)=>a+(state.inventory.find(x=>x.id===id)?.value||0),0)}
-function statOutput(stat){let b=1+(state.stats[stat]||0)/200; if(state.class)b*=1+(classes[state.class].bonuses[stat]||0); return b}
-function localDateKey(d=new Date()){
- const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,"0"),day=String(d.getDate()).padStart(2,"0");
- return `${y}-${m}-${day}`;
-}
+function statOutput(stat){let b=1+(state.stats[stat]||0)/200;if(state.class)b*=1+(classes[state.class].bonuses[stat]||0);return b}
+function localDateKey(d=new Date()){const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,"0"),day=String(d.getDate()).padStart(2,"0");return `${y}-${m}-${day}`}
 function todayKey(){return localDateKey()}
-function weekKey(){
- const d=new Date(); const day=d.getDay()||7; const monday=new Date(d); monday.setHours(0,0,0,0); monday.setDate(d.getDate()-day+1);
- return localDateKey(monday);
-}
+function weekKey(){const d=new Date(),day=d.getDay()||7,monday=new Date(d);monday.setHours(0,0,0,0);monday.setDate(d.getDate()-day+1);return localDateKey(monday)}
 function taskId(t){if(!t.id)t.id="task-"+Math.random().toString(36).slice(2,10);return t.id}
-function completionKey(t){
- taskId(t);
- if(t.type==="Daily")return t.id+"|day|"+todayKey();
- if(t.type==="Weekly")return t.id+"|week|"+weekKey();
- return t.id+"|once";
-}
-function isTaskDone(t){
- const key=completionKey(t);
- return !!state.completed[key];
-}
-function canCompleteTask(t){
- if(t.type==="One-Time"||t.type==="Quest"||t.type==="Epic Quest")return !isTaskDone(t);
- return !isTaskDone(t);
-}
-function levelCheck(){
- let gained=[];
- while(state.xp>=levelNeed(state.level)){
-   state.xp-=levelNeed(state.level); state.level++; gained.push(state.level);
- }
- for(const l of gained){
-   if(!state.pendingChests.includes(l) && !state.chestLevels.includes(l))state.pendingChests.push(l);
- }
- return gained;
-}
-function openChest(l){
- if(state.chestLevels.includes(l)){return toast("This chest has already been opened.")}
- const pool=starterItems;
- const item=pool[Math.floor(Math.random()*pool.length)];
- const copy={...item,id:item.id+"-"+Date.now()+"-"+Math.random().toString(16).slice(2)};
- state.inventory.push(copy);
- state.chestLevels.push(l);
- state.pendingChests=state.pendingChests.filter(x=>x!==l);
- state.log.unshift(`Level ${l} chest opened: ${item.name}`);
- save(); render();
- showEventModal("chest", {level:l,item:copy});
-}
-function showEventModal(type,data){
- const m=document.getElementById("modal"), c=document.getElementById("modalContent");
- window.eventContinuation={levels:data.levels||[], defeated:data.defeatedObj||null};
- let html="";
- if(type==="complete"){
-   html=`<div class="modal-event"><div class="event-icon">⚔️</div><div class="event-title">Activity Complete!</div><div class="event-sub">${esc(data.name)}</div><div class="reward-grid"><div class="reward-box"><span class="muted small">XP</span><b class="xp">+${data.xp}</b></div><div class="reward-box"><span class="muted small">Gold</span><b class="gold">+${data.gold}</b></div><div class="reward-box"><span class="muted small">Damage</span><b>${data.damage}</b></div></div>${data.statsHtml?`<div class="loot">${data.statsHtml}</div>`:""}<button class="primary" onclick="continueAfterReward()">Continue</button></div>`;
- }else if(type==="level"){
-   html=`<div class="modal-event"><div class="event-icon">🎉</div><div class="event-title">LEVEL UP!</div><div class="event-sub">You reached Level ${data.level}</div><div class="loot">🔓 New content may now be available.</div><button class="primary" onclick="openChest(${data.level})">🎁 Open Level ${data.level} Chest</button></div>`;
- }else if(type==="chest"){
-   html=`<div class="modal-event"><div class="event-icon">🎁</div><div class="event-title">Loot Acquired!</div><div class="event-sub">Level ${data.level} chest opened</div><div class="loot"><div style="font-size:22px;font-weight:800">${esc(data.item.name)}</div><span class="tag">${esc(data.item.rarity)}</span><p class="muted">${esc(data.item.desc)}</p></div><button class="primary" onclick="continueAfterChest()">Continue</button></div>`;
- }else if(type==="monster"){
-   html=`<div class="modal-event"><div class="event-icon">💥</div><div class="event-title">Enemy Defeated!</div><div class="event-sub">${esc(data.name)}</div><div class="loot complete-badge">Victory! +${data.gold} bonus gold</div><button class="primary" onclick="continueAfterMonster()">Continue</button></div>`;
- }
- c.innerHTML=html; m.style.display="flex";
-}
-function continueAfterReward(){
- const levels=window.eventContinuation?.levels||[];
- const defeated=window.eventContinuation?.defeated||null;
- if(defeated){showEventModal("monster",{name:defeated.name,gold:defeated.gold,levels:levels});return}
- if(levels.length){showEventModal("level",{level:levels[0],remaining:levels.slice(1)});}
- else{closeModal();render()}
-}
-function continueAfterMonster(){
- const levels=window.eventContinuation?.levels||[];
- if(levels.length)showEventModal("level",{level:levels[0],remaining:levels.slice(1)});
- else{closeModal();render()}
-}
-function continueAfterChest(){
- const next=state.pendingChests.slice().sort((a,b)=>a-b)[0];
- if(next!==undefined)showEventModal("level",{level:next});
- else{closeModal();render()}
-}
-function completeTask(i){
- const t=state.tasks[i]; if(!t)return; taskId(t);
- if(isTaskDone(t))return toast(t.type==="Daily"?"Already completed today.":t.type==="Weekly"?"Already completed this week.":"Already completed.");
- const xp=t.xp;
- state.xp+=xp;
- for(const [s,v] of Object.entries(t.stats||{}))state.stats[s]=(state.stats[s]||0)+v;
- const gold=Math.max(1,Math.round(xp/2)); state.gold+=gold;
- state.completed[completionKey(t)]=true;
- const stat=t.primary||Object.keys(t.stats||{})[0]||"Discipline";
- const damage=Math.round(xp*statOutput(stat)*(1+totalOutputBonus()));
- const defeated=damageDungeon(damage);
- const levels=levelCheck();
- const statsHtml=Object.entries(t.stats||{}).map(([s,v])=>`${ICONS[s]} +${v} ${s}`).join(" &nbsp; ");
- state.log.unshift(`${t.name}: +${xp} XP, +${damage} damage`);
- save();render();
- showEventModal("complete",{name:t.name,xp,gold,damage,levels,statsHtml,defeatedObj:defeated});
-}
-function damageDungeon(dmg){
- let d=state.dungeon; d.enemyHp-=dmg;
- if(d.enemyHp<=0){
-   const name=d.enemyIndex%4===3?"Elite Warden":["Slime","Goblin","Wraith"][d.enemyIndex%3];
-   const bonus=10+d.floor*2; state.gold+=bonus; d.enemyIndex++;
-   if(d.enemyIndex>=4){d.enemyIndex=0;d.floor++;if(d.floor%5===0)d.run="Ruins of Apathy";}
-   d.enemyHp=enemyMax(d); state.log.unshift(`Defeated ${name}!`);
-   if(d.floor>=5&&!state.unlockedBosses.includes("Warden"))state.unlockedBosses.push("Warden");
-   return {name,gold:bonus};
- }
- return null;
-}
-function enemyMax(d){return 70+d.floor*35+(d.enemyIndex===3?70:0)}
-function bossData(){
- const bosses=[
-  {id:"Warden",name:"The Warden of Apathy",need:5,hp:1200,weak:"Discipline",loot:"battle-ring"},
-  {id:"Glutton",name:"The Glutton",need:10,hp:2200,weak:"Vitality",loot:"focus-charm"},
-  {id:"Dragon",name:"The Procrastination Dragon",need:20,hp:4500,weak:"Endurance",loot:"dragon-edge"}
- ];
- return bosses.filter(b=>state.level>=b.need);
-}
-function bossDamage(b){
- const stat=b.weak;
- const base=Math.max(1,Math.round(state.xp/10)+5);
- return Math.round(base*statOutput(stat)*(1+totalOutputBonus()));
-}
-function fightBoss(b){
- let hp=Number(localStorage.getItem("boss_"+b.id)||b.hp);
- const dmg=bossDamage(b);hp-=dmg;
- if(hp<=0){
-   localStorage.removeItem("boss_"+b.id);
-   const loot=starterItems.find(x=>x.id===b.loot);
-   if(loot){const copy={...loot,id:loot.id+"-"+Date.now()};state.inventory.push(copy)}
-   state.gold+=100;
-   state.achievements.push("Defeated "+b.name);
-   toast("👑 Boss defeated! Unique loot acquired.");
- }else localStorage.setItem("boss_"+b.id,hp);
- save();render();
-}
-function equip(id){
- const item=state.inventory.find(x=>x.id===id);if(!item)return;
- state.equipped[item.slot]=state.equipped[item.slot]===id?null:id;
- save();render();
-}
-function addTask(t){
- taskId(t); state.tasks.push(t);save();render();closeModal();toast("Task created.");
-}
-function taskModal(){
- document.getElementById("modalContent").innerHTML=`<h2>Create activity / task</h2>
- <p class="muted small">Choose the XP yourself. The suggested XP is based on the built-in task scale.</p>
- <div class="formgrid">
- <div class="full"><label>Name</label><input id="tn" placeholder="e.g. Run 5 km"></div>
- <div><label>Type</label><select id="tt">${TYPES.map(x=>`<option>${x}</option>`).join("")}</select></div>
- <div><label>Difficulty</label><select id="td">${DIFFS.map(x=>`<option>${x}</option>`).join("")}</select></div>
- <div><label>XP reward</label><input id="tx" type="number" value="10" min="1"></div>
- <div><label>Primary stat</label><select id="ts">${STATS.map(x=>`<option>${x}</option>`).join("")}</select></div>
- <div class="full"><label>Stat gains (personal progress)</label><div class="checkboxes">${STATS.map(s=>`<div class="check"><input type="number" id="sg_${s}" value="0" min="0"> ${ICONS[s]} ${s}</div>`).join("")}</div></div>
- <div class="full"><label>Description</label><textarea id="tdesc"></textarea></div>
- </div>
- <div class="row" style="margin-top:12px"><button class="primary" onclick="createTaskFromModal()">Create</button><button onclick="closeModal()">Cancel</button></div>`;
- document.getElementById("modal").style.display="flex";
-}
-function createTaskFromModal(){
- const name=document.getElementById("tn").value.trim();if(!name)return;
- const diff=document.getElementById("td").value;
- const stats={};STATS.forEach(s=>{let v=+document.getElementById("sg_"+s).value||0;if(v)stats[s]=v});
- addTask({name,type:document.getElementById("tt").value,difficulty:diff,xp:+document.getElementById("tx").value||diffBase[diff],stats,desc:document.getElementById("tdesc").value});
-}
-function editTask(i){
- const t=state.tasks[i];
- document.getElementById("modalContent").innerHTML=`<h2>Edit task</h2><div class="formgrid">
- <div class="full"><label>Name</label><input id="en" value="${esc(t.name)}"></div>
- <div><label>Type</label><select id="et">${TYPES.map(x=>`<option ${x===t.type?"selected":""}>${x}</option>`).join("")}</select></div>
- <div><label>Difficulty</label><select id="ed">${DIFFS.map(x=>`<option ${x===t.difficulty?"selected":""}>${x}</option>`).join("")}</select></div>
- <div><label>XP</label><input id="ex" type="number" value="${t.xp}"></div>
- <div><label>Primary stat</label><select id="es">${STATS.map(x=>`<option ${x===Object.keys(t.stats||{})[0]?"selected":""}>${x}</option>`).join("")}</select></div>
- <div class="full"><label>Stat gains</label><div class="checkboxes">${STATS.map(s=>`<div class="check"><input type="number" id="eg_${s}" value="${t.stats?.[s]||0}" min="0"> ${ICONS[s]} ${s}</div>`).join("")}</div></div>
- </div><div class="row" style="margin-top:12px"><button class="primary" onclick="saveTaskEdit(${i})">Save</button><button class="danger" onclick="deleteTask(${i})">Delete</button><button onclick="closeModal()">Cancel</button></div>`;
- document.getElementById("modal").style.display="flex";
-}
-function saveTaskEdit(i){
- const t=state.tasks[i],stats={};STATS.forEach(s=>{let v=+document.getElementById("eg_"+s).value||0;if(v)stats[s]=v});
- t.name=document.getElementById("en").value.trim()||t.name;t.type=document.getElementById("et").value;t.difficulty=document.getElementById("ed").value;t.xp=Math.max(1,+document.getElementById("ex").value||1);t.stats=stats;t.primary=document.getElementById("es").value;save();closeModal();render();
-}
+function taskDays(t){if(Array.isArray(t.days)&&t.days.length)return t.days.map(Number);return [1,2,3,4,5,6,0]}
+function taskAvailability(t){const day=new Date().getDay();if(t.type==="Daily")return {available:true,label:"Every day"};if(t.type==="Weekly"&&Array.isArray(t.days)&&t.days.length){return {available:t.days.includes(day),label:t.days.map(d=>DAYS[d].slice(0,3)).join(" + ")}}if(t.type==="Weekly")return {available:true,label:"Once per week"};return {available:true,label:t.type}}
+function completionKey(t){taskId(t);if(t.type==="Daily")return t.id+"|day|"+todayKey();if(t.type==="Weekly"&&Array.isArray(t.days)&&t.days.length)return t.id+"|day|"+todayKey();if(t.type==="Weekly")return t.id+"|week|"+weekKey();return t.id+"|once"}
+function isTaskDone(t){return !!state.completed[completionKey(t)]}
+function canCompleteTask(t){if(isTaskDone(t))return false;const a=taskAvailability(t);return a.available}
+function levelCheck(){let gained=[];while(state.xp>=levelNeed(state.level)){state.xp-=levelNeed(state.level);state.level++;gained.push(state.level)}for(const l of gained)if(!state.pendingChests.includes(l)&&!state.chestLevels.includes(l))state.pendingChests.push(l);return gained}
+function openChest(l){if(state.chestLevels.includes(l))return toast("This chest has already been opened.");const pool=items.filter(x=>x.rarity!=="Legendary"||state.level>=20);const item=pool[Math.floor(Math.random()*pool.length)],copy={...item,id:item.id+"-"+Date.now()+"-"+Math.random().toString(16).slice(2)};state.inventory.push(copy);state.chestLevels.push(l);state.pendingChests=state.pendingChests.filter(x=>x!==l);state.log.unshift(`Level ${l} chest opened: ${item.name}`);save();render();showEventModal("chest",{level:l,item:copy})}
+function showEventModal(type,data){const m=document.getElementById("modal"),c=document.getElementById("modalContent");let html="";if(type==="complete")html=`<div class="modal-event"><div class="event-icon">⚔️</div><div class="event-title">Activity Complete!</div><div class="event-sub">${esc(data.name)}</div><div class="reward-grid"><div class="reward-box"><span class="muted small">XP</span><b class="xp">+${data.xp}</b></div><div class="reward-box"><span class="muted small">Gold</span><b class="gold">+${data.gold}</b></div><div class="reward-box"><span class="muted small">Damage</span><b>${data.damage}</b></div></div>${data.statsHtml?`<div class="loot">${data.statsHtml}</div>`:""}<button class="primary" onclick='continueAfterReward(${JSON.stringify(data.levels||[])},${JSON.stringify(data.defeatedObj||null)})'>Continue</button></div>`;else if(type==="level")html=`<div class="modal-event"><div class="event-icon">🎉</div><div class="event-title">LEVEL UP!</div><div class="event-sub">You reached Level ${data.level}</div><div class="loot">🔓 New content unlocked as you grow stronger.</div><button class="primary" onclick="openChest(${data.level})">🎁 Open Level ${data.level} Chest</button></div>`;else if(type==="chest")html=`<div class="modal-event"><div class="event-icon">🎁</div><div class="event-title">Loot Acquired!</div><div class="event-sub">Level ${data.level} chest opened</div><div class="loot"><div style="font-size:22px;font-weight:800">${esc(data.item.name)}</div><span class="tag">${esc(data.item.rarity)}</span><p class="muted">${esc(data.item.desc)}</p></div><button class="primary" onclick="continueAfterChest()">Continue</button></div>`;else if(type==="monster")html=`<div class="modal-event"><div class="event-icon">💥</div><div class="event-title">Enemy Defeated!</div><div class="event-sub">${esc(data.name)}</div><div class="loot complete-badge">Victory! +${data.gold} bonus gold</div><button class="primary" onclick='continueAfterMonster(${JSON.stringify(data.levels||[])})'>Continue</button></div>`;c.innerHTML=html;m.style.display="flex"}
+function continueAfterReward(levels,defeated){if(defeated)return showEventModal("monster",{name:defeated.name,gold:defeated.gold,levels:levels||[]});if(levels?.length)return showEventModal("level",{level:levels[0]});closeModal();render()}
+function continueAfterMonster(levels){if(levels?.length)return showEventModal("level",{level:levels[0]});closeModal();render()}
+function continueAfterChest(){const next=state.pendingChests.slice().sort((a,b)=>a-b)[0];if(next!==undefined)showEventModal("level",{level:next});else{closeModal();render()}}
+function completeTask(i){const t=state.tasks[i];if(!t)return;if(!canCompleteTask(t)){const a=taskAvailability(t);return toast(a.available?"Already completed for this period.":"Not scheduled for today.")}const xp=t.xp;state.xp+=xp;for(const [s,v] of Object.entries(t.stats||{}))state.stats[s]=(state.stats[s]||0)+v;const gold=Math.max(1,Math.round(xp/2));state.gold+=gold;state.completed[completionKey(t)]=true;state.totalCompletions++;const stat=t.primary||Object.keys(t.stats||{})[0]||"Discipline";const damage=Math.round(xp*statOutput(stat)*(1+totalOutputBonus()));const defeated=damageDungeon(damage);const levels=levelCheck();checkAchievements();const statsHtml=Object.entries(t.stats||{}).map(([s,v])=>`${ICONS[s]} +${v} ${s}`).join(" &nbsp; ");state.log.unshift(`${t.name}: +${xp} XP, +${damage} damage`);save();render();showEventModal("complete",{name:t.name,xp,gold,damage,levels,statsHtml,defeatedObj:defeated})}
+function damageDungeon(dmg){const d=state.dungeon;d.enemyHp-=dmg;if(d.enemyHp<=0){const names=["Slime","Goblin Raider","Wandering Wraith","Apathy Knight","Habit Beast","Shadow Hound"];const name=names[d.enemyIndex%names.length];const bonus=10+d.floor*2;state.gold+=bonus;state.totalKills++;d.enemyIndex++;const dung=dungeons.find(x=>x.id===d.id)||dungeons[0];if(d.enemyIndex>=4){d.enemyIndex=0;d.floor++;if(d.floor>dung.floors){d.floor=1;toast(`🏆 ${dung.name} cleared!`);}}d.enemyHp=enemyMax(d);state.log.unshift(`Defeated ${name}!`);checkAchievements();return {name,gold:bonus}}return null}
+function enemyMax(d){return 70+d.floor*35+d.enemyIndex*20}
+function selectDungeon(id){const x=dungeons.find(d=>d.id===id);if(!x||state.level<x.need)return;state.dungeon={id,floor:1,enemyIndex:0,enemyHp:70+35};save();render();toast(`${x.name} selected.`)}
+function fightBoss(b){if(state.level<b.need)return toast("Boss locked.");let hp=Number(localStorage.getItem("boss_"+b.id)||b.hp);const dmg=Math.max(1,Math.round(10*statOutput(b.weak)*(1+totalOutputBonus())));hp-=dmg;if(hp<=0){localStorage.removeItem("boss_"+b.id);const loot=items.find(x=>x.id===b.loot);if(loot){const copy={...loot,id:loot.id+"-boss-"+Date.now()};state.inventory.push(copy)}state.gold+=100;state.bossKills++;state.achievements.push("Defeated "+b.name);state.log.unshift(`Defeated ${b.name}!`);checkAchievements();save();render();showEventModal("monster",{name:b.name,gold:100,levels:[]})}else{localStorage.setItem("boss_"+b.id,hp);save();render();toast(`⚔️ ${dmg} damage dealt!`)}}
+function equip(id){const item=state.inventory.find(x=>x.id===id);if(!item)return;state.equipped[item.slot]=state.equipped[item.slot]===id?null:id;save();render()}
+function buyItem(id){const x=items.find(i=>i.id===id);if(!x)return;if(state.gold<x.price)return toast("Not enough gold.");state.gold-=x.price;state.inventory.push({...x,id:x.id+"-shop-"+Date.now()+"-"+Math.random().toString(16).slice(2)});checkAchievements();save();render();toast(`Purchased ${x.name}!`)}
+function sellItem(id){const idx=state.inventory.findIndex(x=>x.id===id);if(idx<0)return;const x=state.inventory[idx];if(Object.values(state.equipped).includes(id))return toast("Unequip it before selling.");const value=Math.max(1,Math.floor((x.price||50)*.5));state.inventory.splice(idx,1);state.gold+=value;save();render();toast(`Sold ${x.name} for ${value} gold.`)}
+function buyCosmetic(id){const x=cosmetics.find(c=>c.id===id);if(!x)return;if(state.cosmetics.includes(id))return toast("You already own this cosmetic.");if(state.gold<x.price)return toast("Not enough gold.");state.gold-=x.price;state.cosmetics.push(id);save();render();toast(`Unlocked ${x.name}!`)}
+function useCosmetic(id){if(!state.cosmetics.includes(id))return;state.activeCosmetic=id;save();render();toast("Cosmetic equipped.")}
+function addTask(t){taskId(t);state.tasks.push(t);save();render();closeModal();toast("Task created.")}
+function dayChecks(selected=[]){return DAYS.map((d,i)=>`<label class="check"><input type="checkbox" id="day_${i}" ${selected.includes(i)?"checked":""}> ${d}</label>`).join("")}
+function taskModal(editIndex=null){const t=editIndex===null?null:state.tasks[editIndex];const title=t?"Edit task":"Create activity / task";const selected=t?.days||[];document.getElementById("modalContent").innerHTML=`<h2>${title}</h2><p class="muted small">Set your own XP. For Weekly tasks, choose one or more weekdays; the task can then be completed once on each selected day. Leave all days unchecked for a once-per-week task.</p><div class="formgrid"><div class="full"><label>Name</label><input id="tn" value="${esc(t?.name||"")}" placeholder="e.g. Run 5 km"></div><div><label>Type</label><select id="tt">${TYPES.map(x=>`<option ${x===(t?.type||"Daily")?"selected":""}>${x}</option>`).join("")}</select></div><div><label>Difficulty</label><select id="td">${DIFFS.map(x=>`<option ${x===(t?.difficulty||"Easy")?"selected":""}>${x}</option>`).join("")}</select></div><div><label>XP reward</label><input id="tx" type="number" value="${t?.xp||10}" min="1"></div><div><label>Primary stat</label><select id="ts">${STATS.map(x=>`<option ${x===(t?.primary||Object.keys(t?.stats||{})[0]||"Discipline")?"selected":""}>${x}</option>`).join("")}</select></div><div class="full"><label>Weekly schedule (only used for Weekly tasks)</label><div class="checkboxes">${dayChecks(selected)}</div></div><div class="full"><label>Stat gains (personal progress)</label><div class="checkboxes">${STATS.map(s=>`<div class="check"><input type="number" id="sg_${s}" value="${t?.stats?.[s]||0}" min="0"> ${ICONS[s]} ${s}</div>`).join("")}</div></div><div class="full"><label>Description</label><textarea id="tdesc">${esc(t?.desc||"")}</textarea></div></div><div class="row" style="margin-top:12px"><button class="primary" onclick="${t?`saveTaskEdit(${editIndex})`:`createTaskFromModal()`}">${t?"Save":"Create"}</button>${t?`<button class="danger" onclick="deleteTask(${editIndex})">Delete</button>`:""}<button onclick="closeModal()">Cancel</button></div>`;document.getElementById("modal").style.display="flex"}
+function createTaskFromModal(){const name=document.getElementById("tn").value.trim();if(!name)return;const diff=document.getElementById("td").value,stats={};STATS.forEach(s=>{const v=+document.getElementById("sg_"+s).value||0;if(v)stats[s]=v});const days=DAYS.map((_,i)=>document.getElementById("day_"+i).checked?i:null).filter(x=>x!==null);addTask({name,type:document.getElementById("tt").value,difficulty:diff,xp:+document.getElementById("tx").value||diffBase[diff],stats,primary:document.getElementById("ts").value,days,desc:document.getElementById("tdesc").value})}
+function editTask(i){taskModal(i)}
+function saveTaskEdit(i){const t=state.tasks[i],stats={};STATS.forEach(s=>{const v=+document.getElementById("sg_"+s).value||0;if(v)stats[s]=v});t.name=document.getElementById("tn").value.trim()||t.name;t.type=document.getElementById("tt").value;t.difficulty=document.getElementById("td").value;t.xp=Math.max(1,+document.getElementById("tx").value||1);t.stats=stats;t.primary=document.getElementById("ts").value;t.days=DAYS.map((_,i)=>document.getElementById("day_"+i).checked?i:null).filter(x=>x!==null);t.desc=document.getElementById("tdesc").value;save();closeModal();render();toast("Task updated.")}
 function deleteTask(i){if(confirm("Delete this task?")){state.tasks.splice(i,1);save();closeModal();render()}}
 function closeModal(){document.getElementById("modal").style.display="none"}
-function chooseClass(c){if(state.class)return toast("Class already chosen in this prototype.");state.class=c;save();render();toast("Class chosen: "+c)}
-function resetData(){if(confirm("This deletes your local character and all progress. Continue?")){localStorage.removeItem("lifeRPG_v1");location.reload()}}
-function exportSave(){const blob=new Blob([JSON.stringify(state,null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="life-rpg-save.json";a.click();URL.revokeObjectURL(a.href)}
-function importSave(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{state=JSON.parse(r.result);save();render();toast("Save imported.")}catch{toast("Invalid save file.")}};r.readAsText(f)}
-function home(){
- const need=levelNeed(state.level), pct=Math.min(100,state.xp/need*100);
- document.getElementById("app").innerHTML=`<div class="grid">
- <section class="panel wide"><div class="hero"><div><div class="level">Level ${state.level} ${state.class?"• "+esc(state.class):""}</div><div class="muted">${esc(state.name)}</div></div><div class="gold">🪙 ${state.gold}</div></div>
- <div style="margin:10px 0 5px">XP ${state.xp} / ${need}</div><div class="bar"><div class="fill" style="width:${pct}%"></div></div>
- <div class="stats">${STATS.map(s=>`<div class="stat">${ICONS[s]} ${s}<b>${state.stats[s]}</b><span class="muted small">Output ×${statOutput(s).toFixed(2)}</span></div>`).join("")}</div></section>
- <section class="panel"><h2>⚔️ Active Expedition</h2><div class="enemy">${state.dungeon.run} • Floor ${state.dungeon.floor}</div><p>Enemy ${state.dungeon.enemyIndex+1}/4</p><div class="bar"><div class="fill" style="width:${Math.max(0,state.dungeon.enemyHp/enemyMax(state.dungeon)*100)}%"></div></div><p class="muted small">Complete real-life tasks to deal damage. Your stats and equipment affect output only.</p><button class="primary" onclick="page='tasks';render()">View tasks</button></section>
- <section class="panel"><h2>🔓 Unlocks</h2>${[[3,"Dungeons"],[5,"The Warden boss"],[10,"The Glutton boss"],[15,"Raids"],[20,"Dragon boss"]].map(([l,x])=>`<div class="${state.level<l?"locked":""}">Level ${l}: ${x} ${state.level>=l?"✓":"🔒"}</div>`).join("")}</section>
- </div>`;
-}
-function tasks(){
- const active=state.tasks.filter(t=>!isTaskDone(t)); const done=state.tasks.filter(t=>isTaskDone(t));
- const taskHtml=(t,i,completed)=>`<div class="task ${completed?"done":""}"><div><div class="task-title">${esc(t.name)} ${completed?'<span class="complete-badge">✓ Done</span>':''}</div><span class="tag">${t.type}</span><span class="tag">${t.difficulty}</span><span class="xp">+${t.xp} XP</span><div class="muted small">${esc(t.desc||"")} ${Object.entries(t.stats||{}).map(([s,v])=>`• ${ICONS[s]} +${v} ${s}`).join(" ")}</div></div><div class="row">${completed?'<button disabled>✓ Completed</button>':`<button class="primary" onclick="completeTask(${i})">✓ Complete</button>`}<button onclick="editTask(${i})">Edit</button></div></div>`;
- document.getElementById("app").innerHTML=`<div class="grid"><section class="panel wide"><div class="row"><div><h2 style="margin:0">📜 Activities & Quests</h2><div class="muted small">Today: ${new Date().toLocaleDateString()} • Daily tasks reset tomorrow; weekly tasks reset Monday.</div></div><button class="primary right" onclick="taskModal()">+ Create</button></div>${active.map(t=>taskHtml(t,state.tasks.indexOf(t),false)).join("")||'<div class="empty">🎉 Nothing left to complete for this period!</div>'}${done.length?`<h3 style="margin-top:20px">Completed for this period</h3>${done.map(t=>taskHtml(t,state.tasks.indexOf(t),true)).join("")}`:""}</section></div>`;
-}
-function dungeon(){
- const d=state.dungeon, hp=enemyMax(d);
- document.getElementById("app").innerHTML=`<div class="grid"><section class="panel wide"><h2>🏰 ${esc(d.run)}</h2><p>Floor ${d.floor} • Encounter ${d.enemyIndex+1}/4</p><div class="panel" style="margin:10px 0"><div class="enemy">${d.enemyIndex===3?"Elite Warden":["Forest Slime","Goblin Raider","Wandering Wraith"][d.enemyIndex]}</div><div class="bar" style="margin:8px 0"><div class="fill" style="width:${Math.max(0,d.enemyHp/hp*100)}%"></div></div><div>${Math.max(0,d.enemyHp)} / ${hp} HP</div></div><p class="muted">Your tasks are your attacks. There is no separate combat grind: living your life advances the dungeon.</p>
- <button class="primary" onclick="page='tasks';render()">Complete an activity → attack</button>
- </section><section class="panel"><h2>🗺️ Dungeon progression</h2><p>Every 4 enemies advances a floor. Every 5 floors introduces stronger encounters.</p><p>Bosses unlock by character level.</p></section></div>`;
-}
-function bosses(){
- const all=[
- {id:"Warden",name:"The Warden of Apathy",need:5,hp:1200,weak:"Discipline",loot:"battle-ring"},
- {id:"Glutton",name:"The Glutton",need:10,hp:2200,weak:"Vitality",loot:"focus-charm"},
- {id:"Dragon",name:"The Procrastination Dragon",need:20,hp:4500,weak:"Endurance",loot:"dragon-edge"}
- ];
- document.getElementById("app").innerHTML=`<div class="grid"><section class="panel wide"><h2>👑 Bosses & Raids</h2><p class="muted">Bosses are unlocked by level. A boss attack is calculated from your existing progress; completing tasks is what creates that progress.</p>${all.map(b=>{
- let unlocked=state.level>=b.need,hp=Number(localStorage.getItem("boss_"+b.id)||b.hp),pct=hp/b.hp*100;
- return `<div class="panel ${unlocked?"":"locked"} ${unlocked?"boss":""}" style="margin:10px 0"><div class="row"><div><div class="enemy">${b.name}</div><div class="muted small">Level ${b.need} • Weakness: ${ICONS[b.weak]} ${b.weak} • Loot: ${starterItems.find(x=>x.id===b.loot)?.name||"Unique item"}</div></div><div class="right">${unlocked?`<button class="primary" onclick="fightBoss(${JSON.stringify(b).replace(/"/g,"&quot;")})">Attack for ~${bossDamage(b)}</button>`:"🔒 Locked"}</div></div><div class="bar" style="margin-top:9px"><div class="fill" style="width:${pct}%"></div></div><div class="small">${hp} / ${b.hp} HP</div></div>`}).join("")}</section></div>`;
-}
-function inventory(){
- document.getElementById("app").innerHTML=`<div class="grid"><section class="panel"><h2>🎒 Equipment</h2><p class="muted small">Important rule: equipment affects output only. It never gives XP or personal stat gains.</p>${state.inventory.length?state.inventory.map(x=>`<div class="item"><div><b>${esc(x.name)}</b> <span class="tag">${x.rarity}</span><div class="muted small">${esc(x.desc)}</div></div><button onclick="equip('${x.id}')">${state.equipped[x.slot]===x.id?"Unequip":"Equip"}</button></div>`).join(""):"<div class=empty>No equipment yet. Level up to open chests.</div>"}</section><section class="panel"><h2>⚙️ Output bonuses</h2><p>Total equipment damage bonus: <b>+${Math.round(totalOutputBonus()*100)}%</b></p><p class="muted">Stats and class bonuses are also output modifiers, but your XP/stat gains remain entirely tied to completed real-life activities.</p></section></div>`;
-}
+function chooseClass(c){if(state.class)return toast("Class already chosen.");state.class=c;save();render();toast("Class chosen: "+c)}
+function checkAchievements(){for(const a of achievementDefs){if(!state.achievements.includes(a.id)&&a.check()){state.achievements.push(a.id);state.gold+=a.reward;state.log.unshift(`Achievement unlocked: ${a.name} (+${a.reward} gold)`);toast(`🏆 Achievement unlocked: ${a.name}!`)}}save()}
+function resetData(){if(confirm("This deletes your local character and all progress. Continue?")){localStorage.removeItem("lifeRPG_v1");bossList.forEach(b=>localStorage.removeItem("boss_"+b.id));location.reload()}}
+function exportSave(){const blob=new Blob([JSON.stringify(state,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="life-rpg-save.json";a.click();URL.revokeObjectURL(a.href)}
+function importSave(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{state=JSON.parse(r.result);state.pendingChests??=[];state.chestLevels??=[];state.completed??={};state.achievements??=[];state.cosmetics??=[];state.totalCompletions??=0;state.totalKills??=0;state.bossKills??=0;save();render();toast("Save imported.")}catch{toast("Invalid save file.")}};r.readAsText(f)}
+function home(){const need=levelNeed(state.level),pct=Math.min(100,state.xp/need*100),d=state.dungeon,du=dungeons.find(x=>x.id===d.id)||dungeons[0];document.getElementById("app").innerHTML=`<div class="grid"><section class="panel wide"><div class="hero"><div><div class="level">Level ${state.level} ${state.class?"• "+esc(state.class):""}</div><div class="muted">${esc(state.name)} ${state.activeCosmetic?"• ✨ "+esc(cosmetics.find(c=>c.id===state.activeCosmetic)?.name||""):""}</div></div><div class="gold">🪙 ${state.gold}</div></div><div style="margin:10px 0 5px">XP ${state.xp} / ${need}</div><div class="bar"><div class="fill" style="width:${pct}%"></div></div><div class="stats">${STATS.map(s=>`<div class="stat">${ICONS[s]} ${s}<b>${state.stats[s]}</b><span class="muted small">Output ×${statOutput(s).toFixed(2)}</span></div>`).join("")}</div></section><section class="panel"><h2>⚔️ Active Expedition</h2><div class="enemy">${du.theme} ${du.name}</div><p>Floor ${d.floor} • Enemy ${d.enemyIndex+1}/4</p><div class="bar"><div class="fill" style="width:${Math.max(0,d.enemyHp/enemyMax(d)*100)}%"></div></div><p class="muted small">Complete real-life tasks to deal damage.</p><button class="primary" onclick="page='tasks';render()">View tasks</button></section><section class="panel"><h2>📊 Progress</h2><div>Activities completed: <b>${state.totalCompletions}</b></div><div>Enemies defeated: <b>${state.totalKills}</b></div><div>Bosses defeated: <b>${state.bossKills}</b></div><div>Equipment owned: <b>${state.inventory.length}</b></div></section><section class="panel"><h2>🔓 Next milestones</h2>${[[3,"Ruins of Apathy"],[5,"Warden boss"],[7,"Sunken Archives"],[10,"Glutton boss"],[12,"Crimson Castle"],[15,"Mirror boss"],[18,"Abyssal Rift"],[20,"Grand Procrastinator"],[25,"Dreaming City + Dragon"]].map(([l,x])=>`<div class="${state.level<l?"locked":""}">Level ${l}: ${x} ${state.level>=l?"✓":"🔒"}</div>`).join("")}</section></div>`}
+function tasks(){const active=state.tasks.filter(t=>!isTaskDone(t)&&canCompleteTask(t));const unavailable=state.tasks.filter(t=>!isTaskDone(t)&&!canCompleteTask(t));const done=state.tasks.filter(t=>isTaskDone(t));const taskHtml=(t,i,completed=false,unavailable=false)=>{const a=taskAvailability(t);return `<div class="task ${completed?"done":""} ${unavailable?"locked":""}"><div><div class="task-title">${esc(t.name)} ${completed?'<span class="complete-badge">✓ Done</span>':unavailable?`<span class="tag">${esc(a.label)}</span>`:""}</div><span class="tag">${t.type}</span><span class="tag">${t.difficulty}</span><span class="xp">+${t.xp} XP</span><div class="muted small">${esc(t.desc||"")} ${Object.entries(t.stats||{}).map(([s,v])=>`• ${ICONS[s]} +${v} ${s}`).join(" ")}</div></div><div class="row">${completed?'<button disabled>✓ Completed</button>':unavailable?'<button disabled>Not today</button>':`<button class="primary" onclick="completeTask(${i})">✓ Complete</button>`}<button onclick="editTask(${i})">Edit</button></div></div>`};document.getElementById("app").innerHTML=`<div class="grid"><section class="panel wide"><div class="row"><div><h2 style="margin:0">📜 Activities & Quests</h2><div class="muted small">${new Date().toLocaleDateString()} • Daily resets tomorrow • Weekly schedules follow selected weekdays</div></div><button class="primary right" onclick="taskModal()">+ Create</button></div>${active.map(t=>taskHtml(t,state.tasks.indexOf(t))).join("")||'<div class="empty">🎉 Nothing left to complete today!</div>'}${unavailable.length?`<h3 style="margin-top:20px">Upcoming / not scheduled today</h3>${unavailable.map(t=>taskHtml(t,state.tasks.indexOf(t),false,true)).join("")}`:""}${done.length?`<h3 style="margin-top:20px">Completed</h3>${done.map(t=>taskHtml(t,state.tasks.indexOf(t),true)).join("")}`:""}</section></div>`}
+function dungeon(){const d=state.dungeon,du=dungeons.find(x=>x.id===d.id)||dungeons[0],hp=enemyMax(d);document.getElementById("app").innerHTML=`<div class="grid"><section class="panel wide"><h2>🏰 Dungeons</h2><div class="cols">${dungeons.map(x=>`<div class="panel ${state.level<x.need?"locked":""}"><div class="enemy">${x.theme} ${x.name}</div><div class="muted small">Level ${x.need} • ${x.floors} floors</div><p class="muted small">${x.desc}</p>${state.level>=x.need?`<button class="${x.id===d.id?"primary":""}" onclick="selectDungeon('${x.id}')">${x.id===d.id?"Active":"Enter"}</button>`:"🔒 Locked"}</div>`).join("")}</div></section><section class="panel wide"><h2>${du.theme} ${du.name} • Floor ${d.floor}</h2><p>Encounter ${d.enemyIndex+1}/4</p><div class="panel"><div class="enemy">${d.enemyIndex===3?"Elite Warden":["Forest Slime","Goblin Raider","Wandering Wraith"][d.enemyIndex%3]}</div><div class="bar" style="margin:8px 0"><div class="fill" style="width:${Math.max(0,d.enemyHp/hp*100)}%"></div></div><div>${Math.max(0,d.enemyHp)} / ${hp} HP</div></div><p class="muted">Your real-life activities are your attacks.</p><button class="primary" onclick="page='tasks';render()">Complete an activity → attack</button></section></div>`}
+function bosses(){document.getElementById("app").innerHTML=`<div class="grid"><section class="panel wide"><h2>👑 Bosses</h2><p class="muted">Each boss has a stat weakness. Your completed activities create the progress; stats and equipment only modify combat output.</p>${bossList.map(b=>{const unlocked=state.level>=b.need,hp=Number(localStorage.getItem("boss_"+b.id)||b.hp),pct=hp/b.hp*100;return `<div class="panel ${unlocked?"boss":"locked"}" style="margin:10px 0"><div class="row"><div><div class="enemy">${b.name}</div><div class="muted small">Level ${b.need} • Weakness: ${ICONS[b.weak]} ${b.weak} • Unique loot: ${items.find(x=>x.id===b.loot)?.name||"Unique item"}</div><div class="muted small">${b.desc}</div></div><div class="right">${unlocked?`<button class="primary" onclick='fightBoss(${JSON.stringify(b).replace(/'/g,"&#39;")})'>Attack for ~${Math.max(1,Math.round(10*statOutput(b.weak)*(1+totalOutputBonus())))}</button>`:"🔒 Locked"}</div></div><div class="bar" style="margin-top:9px"><div class="fill" style="width:${pct}%"></div></div><div class="small">${hp} / ${b.hp} HP</div></div>`}).join("")}</section></div>`}
+function inventory(){const eq=state.inventory;document.getElementById("app").innerHTML=`<div class="grid"><section class="panel wide"><h2>🎒 Equipment</h2><p class="muted small">Equipment affects combat output only. It never gives XP or personal stat gains.</p>${eq.length?eq.map(x=>`<div class="item"><div><b>${esc(x.name)}</b> <span class="tag">${x.rarity}</span><div class="muted small">${esc(x.desc)}</div></div><div class="row"><button onclick="equip('${x.id}')">${state.equipped[x.slot]===x.id?"Unequip":"Equip"}</button><button onclick="sellItem('${x.id}')">Sell ${Math.max(1,Math.floor((x.price||50)*.5))}🪙</button></div></div>`).join(""):"<div class=empty>No equipment yet.</div>"}</section><section class="panel"><h2>⚙️ Equipped output</h2><p>Total equipment damage bonus: <b>+${Math.round(totalOutputBonus()*100)}%</b></p>${Object.entries(state.equipped).map(([slot,id])=>`<div>${slot}: ${id?esc(state.inventory.find(x=>x.id===id)?.name||"None"):"None"}</div>`).join("")}</section></div>`}
+function shop(){document.getElementById("app").innerHTML=`<div class="grid"><section class="panel wide"><div class="row"><div><h2 style="margin:0">🛒 Shop</h2><div class="muted small">Spend gold earned from real-life progress.</div></div><div class="gold right">🪙 ${state.gold}</div></div><h3>Equipment</h3>${items.map(x=>`<div class="item"><div><b>${x.name}</b> <span class="tag">${x.rarity}</span><div class="muted small">${x.desc}</div></div><button class="primary" onclick="buyItem('${x.id}')">${x.price} 🪙</button></div>`).join("")}<h3 style="margin-top:22px">✨ Cosmetics</h3>${cosmetics.map(x=>{const owned=state.cosmetics.includes(x.id);return `<div class="item"><div><b>${x.name}</b> <span class="tag">${x.type}</span><div class="muted small">${x.desc}</div></div>${owned?`<button onclick="useCosmetic('${x.id}')">${state.activeCosmetic===x.id?"Equipped":"Equip"}</button>`:`<button class="primary" onclick="buyCosmetic('${x.id}')">${x.price} 🪙</button>`}</div>`}).join("")}</section></div>`}
 function character(){
  const classHtml=Object.entries(classes).map(([c,x])=>{
-   const choose=state.class===c?'✓':(!state.class?'<button onclick="chooseClass(\''+c+'\')">Choose</button>':'');
-   return '<div class="item"><div><b>'+esc(c)+'</b><div class="muted small">'+esc(x.desc)+'</div></div>'+choose+'</div>';
+   const action=state.class===c?'✓':(!state.class?`<button onclick="chooseClass('${c}')">Choose</button>`:'');
+   return `<div class="item"><div><b>${esc(c)}</b><div class="muted small">${esc(x.desc)}</div></div>${action}</div>`;
  }).join('');
- const achHtml=state.achievements.length?state.achievements.map(x=>'<div class="loot">🏆 '+esc(x)+'</div>').join(''):'<div class="empty">Achievements will appear as you progress.</div>';
- const logHtml=state.log.slice(0,8).map(x=>'<div class="muted small">• '+esc(x)+'</div>').join('');
- document.getElementById('app').innerHTML='<div class="grid"><section class="panel"><h2>🧙 Character</h2><div class="formgrid"><div><label>Name</label><input id="charName" value="'+esc(state.name)+'"></div></div><button style="margin-top:10px" onclick="state.name=document.getElementById(\'charName\').value||\'Adventurer\';save();render()">Save name</button><h3>Class</h3>'+classHtml+'</section><section class="panel"><h2>🏆 Achievements</h2>'+achHtml+'<h3>Recent activity</h3>'+logHtml+'</section><section class="panel wide"><h2>⚠️ Data</h2><p class="muted">Your save lives only in this browser. Use Export regularly if you want backups or move devices.</p><button class="danger" onclick="resetData()">Reset character</button></section></div>';
+ const achHtml=achievementDefs.map(a=>{
+   const unlocked=state.achievements.includes(a.id);
+   return `<div class="loot ${unlocked?'':'locked'}"><b>${unlocked?'🏆':'🔒'} ${esc(a.name)}</b><div class="muted small">${esc(a.desc)}</div><div class="small">Reward: ${a.reward} gold</div></div>`;
+ }).join('');
+ const cosmeticHtml=state.cosmetics.length?state.cosmetics.map(id=>{
+   const c=cosmetics.find(x=>x.id===id); if(!c)return '';
+   return `<div class="item"><div><b>${esc(c.name)}</b><div class="muted small">${esc(c.desc)}</div></div><button onclick="useCosmetic('${c.id}')">${state.activeCosmetic===c.id?'Equipped':'Equip'}</button></div>`;
+ }).join(''):`<div class="empty">Buy cosmetics in the Shop.</div>`;
+ const logHtml=state.log.slice(0,8).map(x=>`<div class="muted small">• ${esc(x)}</div>`).join('');
+ document.getElementById('app').innerHTML=`<div class="grid"><section class="panel"><h2>🧙 Character</h2><label>Name</label><input id="charName" value="${esc(state.name)}"><button style="margin-top:10px" onclick="state.name=document.getElementById('charName').value||'Adventurer';save();render()">Save name</button><h3>Class</h3>${classHtml}</section><section class="panel"><h2>🏆 Achievements</h2>${achHtml}</section><section class="panel wide"><h2>✨ Cosmetics</h2><div class="muted small">Cosmetics have no gameplay effect.</div>${cosmeticHtml}</section><section class="panel wide"><h2>Recent activity</h2>${logHtml||'<div class="empty">No activity yet.</div>'}<h2 style="margin-top:20px">⚠️ Data</h2><p class="muted">Your save lives only in this browser. Export regularly for backups or moving devices.</p><button class="danger" onclick="resetData()">Reset character</button></section></div>`;
 }
-function render(){
- document.getElementById("nav").innerHTML=[["home","🏠 Home"],["tasks","📜 Tasks"],["dungeon","🏰 Dungeon"],["bosses","👑 Bosses"],["inventory","🎒 Loot"],["character","🧙 Character"]].map(([p,n])=>`<button class="${page===p?"active":""}" onclick="page='${p}';render()">${n}</button>`).join("");
- ({home,tasks,dungeon,bosses,inventory,character}[page]||home)();
-}
+function achievements(){page="character";render()}
+function render(){document.getElementById("nav").innerHTML=[["home","🏠 Home"],["tasks","📜 Tasks"],["dungeon","🏰 Dungeons"],["bosses","👑 Bosses"],["shop","🛒 Shop"],["inventory","🎒 Loot"],["character","🏆 Character"]].map(([p,n])=>`<button class="${page===p?"active":""}" onclick="page='${p}';render()">${n}</button>`).join("");({home,tasks,dungeon,bosses,shop,inventory,character}[page]||home)()}
 render();
 </script>
 </body>
