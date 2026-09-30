@@ -220,7 +220,7 @@ function damageDungeon(dmg){
    const bonus=10+d.floor*2+(wasElite?10:0);
    state.gold+=bonus;state.totalKills++;
    let loot=null;
-   const chance=wasElite?.45:.12;
+   const chance = wasElite ? 0.45 : 0.12;
    if(Math.random()<chance){
      const pool=monsterLootItems.filter(x=>!x.minLevel||state.level>=x.minLevel);
      if(pool.length){
